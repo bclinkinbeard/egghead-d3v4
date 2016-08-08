@@ -1,38 +1,34 @@
-function printValues (interpolator, name) {
-  const intervals = [0, 0.5, 1];
-  console.group(name);
-  intervals.forEach(interval => console.log(interpolator(interval)));
-  console.groupEnd();
-}
+var linearScale = d3.scaleLinear()
+  .domain([0, 100])
+  .range([0, 600])
+  .clamp(true);
 
-const numberInterpolator = d3.interpolate(0, 100);
-printValues(numberInterpolator, 'Numbers');
+console.log(linearScale(50));
 
-const stringInterpolator = d3.interpolate(
-  '300 12px sans-serif',
-  '500 36px Comic-Sans'
-);
-printValues(stringInterpolator, 'Strings');
+// time
 
-const dateInterpolator = d3.interpolate(new Date(2016, 0, 1), new Date());
-printValues(dateInterpolator, 'Dates');
+var timeScale = d3.scaleTime()
+  .domain([new Date(2016, 0, 1), new Date()])
+  .range([0, 500]);
 
-const arrayInterpolator = d3.interpolate([0, 0], [100, 100]);
-printValues(arrayInterpolator, 'Arrays');
+console.log(timeScale(new Date(2016, 3, 16)));
+console.log(timeScale.invert(250).toString());
 
-const objectInterpolator = d3.interpolate({foo: 3}, {foo: 9});
-printValues(objectInterpolator, 'Objects');
+// quantize
 
-const cssInterpolator = d3.interpolate(
-  'rotate(0deg)',
-  'rotate(180deg)'
-);
-printValues(cssInterpolator, 'CSS');
+var quantizeScale = d3.scaleQuantize()
+  .domain([0, 100])
+  .range(['red', 'white', 'green']);
 
-const svgInterpolator = d3.interpolate(
-  'translate(0, 0)',
-  'translate(250, 100)'
-);
-printValues(svgInterpolator, 'SVG');
+console.log(quantizeScale(80));
+console.log(quantizeScale.invertExtent('white'));
 
-console.log(d3.quantize(svgInterpolator, 5));
+// ordinal
+
+var ordinalScale = d3.scaleOrdinal()
+  .domain(['good', 'better', 'best'])
+  .range([10, 20, 50]);
+
+console.log(ordinalScale('good'));
+console.log(ordinalScale('better'));
+console.log(ordinalScale('best'));
