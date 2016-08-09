@@ -1,9 +1,7 @@
-var quantizeScale = d3.scaleQuantize()
-  .domain([0, 100])
-  .range(["red", "white", "green"]);
+var ordinalScale = d3.scaleOrdinal()
+  .domain(['poor', 'good', 'great'])
+  .range(['red', 'white', 'green']);
 
-console.log(quantizeScale(22));
-console.log(quantizeScale(50));
-console.log(quantizeScale(88));
-
-console.log(quantizeScale.invertExtent('white'));
+console.log(ordinalScale('good'));
+console.log(ordinalScale('great'));
+console.log(ordinalScale('poor'));
