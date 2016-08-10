@@ -1,16 +1,11 @@
-d3.json('data/data.json', function (data) {
-  var extent = d3.extent(data, function (d) {
-    return d.age;
-  });
-  console.log(extent);
+var div = d3.select('div');
+console.log(div.nodes());
 
-  var scale = d3.scaleLinear()
-    .domain(extent)
-    .range([0, 600]);
-  console.log(scale(37));
+var divLinks = div.selectAll('a');
+console.log(divLinks.nodes());
 
-  var ages = d3.set(data, function (d) {
-    return d.age;
-  });
-  console.log(ages.values());
-})
+var secondLink = d3.selectAll('a:nth-child(2)');
+console.log(secondLink.nodes());
+
+var allLinks = d3.selectAll(document.links);
+console.log(allLinks.size());
