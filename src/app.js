@@ -1,4 +1,7 @@
-d3.selectAll('a:nth-child(2)')
-  .attr('href', 'http://google.com')
-  .classed('red', true)
-  .html('Inventory <b>SALE</b>');
+d3.select('.title')
+  .append('div')
+    .style('color', 'red')
+    .html('Inventory <b>SALE</b>')
+  .append('button')
+    .style('display', 'block')
+    .text('submit');
