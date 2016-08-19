@@ -11,3 +11,10 @@
 
 [d3-scale](https://github.com/d3/d3-scale)
 [Code on JSBin](http://jsbin.com/fasixo/edit?js,console)
+
+#### Lesson 11 - Data Joins
+
+[d3-selection: Joining Data](https://github.com/d3/d3-selection#joining-data)
+[Code on JSBin](http://jsbin.com/majacidupo/edit?html,js,output)
+[Thinking with Joins](https://bost.ocks.org/mike/join/)
+[Object Constancy](https://bost.ocks.org/mike/constancy/)

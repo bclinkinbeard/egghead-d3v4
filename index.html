@@ -5,19 +5,21 @@
   <title>Egghead D3 v4</title>
   <script src="node_modules/d3/build/d3.js"></script>
   <style>
-    div { display: inline-block; border: 1px solid black; }
-    a { display: block; }
-    .red { color: red; }
+    .chart {
+      background: lightgray;
+      border: 1px solid black;
+      min-width: 200px;
+      min-height: 350px;
+    }
   </style>
 </head>
 <body>
-  <div class="title">
-    <a href="#">About</a>
-    <a href="#">Products</a>
-    <a href="#">Contact</a>
-  </div>
 
-  <a class="action" href="#">Buy Now</a>
+  <div class="chart">
+    <div>Billy</div>
+    <div>Cindy</div>
+    <div>Walter</div>
+  </div>
 
   <script src="src/app.js"></script>
 </body>
