@@ -18,7 +18,22 @@ var bar = d3.select('.chart')
 
 bar.append('rect')
     .style('width', d => d.score)
-    .attr('class', 'bar');
+    .attr('class', 'bar')
+    .on('mouseover', function (d, i, elements) {
+      d3.select(this).style('transform', 'scaleX(2)');
+
+      var self = this;
+
+      d3.selectAll(elements)
+        .style('fill-opacity', function () {
+          return this === self ? 1 : 0.5;
+        });
+    })
+    .on('mouseout', function (d, i, elements) {
+      d3.select(this).style('transform', 'scaleX(1)');
+      d3.selectAll(elements)
+        .style('fill-opacity', 1);
+    });
 
 bar.append('text')
   .attr('y', 20)
