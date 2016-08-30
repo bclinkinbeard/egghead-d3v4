@@ -21,13 +21,9 @@ bar.append('rect')
     .attr('class', 'bar')
     .on('mouseover', function (d, i, elements) {
       d3.select(this).style('transform', 'scaleX(2)');
-
-      var self = this;
-
       d3.selectAll(elements)
-        .style('fill-opacity', function () {
-          return this === self ? 1 : 0.5;
-        });
+        .filter(':not(:hover)')
+        .style('fill-opacity', 0.5);
     })
     .on('mouseout', function (d, i, elements) {
       d3.select(this).style('transform', 'scaleX(1)');
