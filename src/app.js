@@ -1,4 +1,4 @@
-var margin = { top: 0, right: 0, bottom: 30, left: 20 };
+var margin = { top: 10, right: 20, bottom: 60, left: 40 };
 var width = 425 - margin.left - margin.right;
 var height = 625 - margin.top - margin.bottom;
 
@@ -14,3 +14,22 @@ svg.append('rect')
   .attr('height', height)
   .style('fill', 'lightblue')
   .style('stroke', 'green');
+
+var yScale = d3.scaleLinear()
+  .domain([0, 100])
+  .range([height, 0]);
+var yAxis = d3.axisLeft(yScale);
+svg.call(yAxis);
+
+var xScale = d3.scaleTime()
+  .domain([new Date(2016, 0, 1, 6), new Date(2016, 0, 1, 9)])
+  .range([0, width]);
+
+var xAxis = d3.axisBottom(xScale)
+  .ticks(5)
+  .tickSize(10)
+  .tickPadding(5);
+svg
+  .append('g')
+    .attr('transform', `translate(0, ${height})`)
+  .call(xAxis);
