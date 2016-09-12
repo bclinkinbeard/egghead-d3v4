@@ -1,4 +1,6 @@
-# egghead-d3v4
+# Load and Inspect Data with D3
+
+### [Lesson Code](https://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/06-loading-data?show=src%2Fapp.js,preview)
 
 ### Lesson APIs
 - [d3.json](https://github.com/d3/d3-request/blob/master/README.md#json)
