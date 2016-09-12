@@ -1,13 +1,12 @@
-# egghead-d3v4
+# Create DOM Elements with D3
 
-#### Lesson 2 - d3-interpolate
-[d3-interpolate][2.1]
-[Code on JSBin][2.2]
+### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/09-create-dom-elements?show=src%2Fapp.js,preview)
 
-[2.1]: https://github.com/d3/d3-interpolate
-[2.2]: http://jsbin.com/farucah/edit?js,console
-
-#### Lesson 3 - d3-scale
-
-[d3-scale](https://github.com/d3/d3-scale)
-[Code on JSBin](http://jsbin.com/fasixo/edit?js,console)
+### Lesson APIs
+- [d3.select](https://github.com/d3/d3-selection/blob/master/README.md#select)
+- [selection.append](https://github.com/d3/d3-selection/blob/master/README.md#selection_append)
+- [selection.insert](https://github.com/d3/d3-selection/blob/master/README.md#selection_insert)
+- [selection.remove](https://github.com/d3/d3-selection/blob/master/README.md#selection_remove)
+- [selection.style](https://github.com/d3/d3-selection/blob/master/README.md#selection_style)
+- [selection.text](https://github.com/d3/d3-selection/blob/master/README.md#selection_text)
+- [selection.html](https://github.com/d3/d3-selection/blob/master/README.md#selection_html)
