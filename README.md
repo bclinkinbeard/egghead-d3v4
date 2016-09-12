@@ -1,13 +1,7 @@
-# egghead-d3v4
+# Convert Dates to Numeric Values with Time Scales in D3 v4
 
-#### Lesson 2 - d3-interpolate
-[d3-interpolate][2.1]
-[Code on JSBin][2.2]
+### [Lesson Code](https://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/03-time-scales?show=src%2Fapp.js,preview)
 
-[2.1]: https://github.com/d3/d3-interpolate
-[2.2]: http://jsbin.com/farucah/edit?js,console
-
-#### Lesson 3 - d3-scale
-
-[d3-scale](https://github.com/d3/d3-scale)
-[Code on JSBin](http://jsbin.com/fasixo/edit?js,console)
+### Lesson APIs
+- [d3.scaleTime](https://github.com/d3/d3-scale/blob/master/README.md#scaleTime)
+- [time.invert](https://github.com/d3/d3-scale/blob/master/README.md#time_invert)
