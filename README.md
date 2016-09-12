@@ -1,20 +1,15 @@
-# egghead-d3v4
+# Better D3 Code Organization with selection.call()
 
-#### Lesson 2 - d3-interpolate
-[d3-interpolate][2.1]
-[Code on JSBin][2.2]
+### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/14-selection-call?show=src%2Fapp.js,preview)
 
-[2.1]: https://github.com/d3/d3-interpolate
-[2.2]: http://jsbin.com/farucah/edit?js,console
-
-#### Lesson 3 - d3-scale
-
-[d3-scale](https://github.com/d3/d3-scale)
-[Code on JSBin](http://jsbin.com/fasixo/edit?js,console)
-
-#### Lesson 11 - Data Joins
-
-[d3-selection: Joining Data](https://github.com/d3/d3-selection#joining-data)
-[Code on JSBin](http://jsbin.com/majacidupo/edit?html,js,output)
-[Thinking with Joins](https://bost.ocks.org/mike/join/)
-[Object Constancy](https://bost.ocks.org/mike/constancy/)
+### Lesson APIs
+- [d3.select](https://github.com/d3/d3-selection/blob/master/README.md#select)
+- [d3.selectAll](https://github.com/d3/d3-selection/blob/master/README.md#selectAll)
+- [selection.call](https://github.com/d3/d3-selection/blob/master/README.md#selection_call)
+- [selection.on](https://github.com/d3/d3-selection/blob/master/README.md#selection_on)
+- [selection.data](https://github.com/d3/d3-selection/blob/master/README.md#selection_data)
+- [selection.enter](https://github.com/d3/d3-selection/blob/master/README.md#selection_enter)
+- [selection.append](https://github.com/d3/d3-selection/blob/master/README.md#selection_append)
+- [selection.attr](https://github.com/d3/d3-selection/blob/master/README.md#selection_attr)
+- [selection.style](https://github.com/d3/d3-selection/blob/master/README.md#selection_style)
+- [selection.text](https://github.com/d3/d3-selection/blob/master/README.md#selection_text)
