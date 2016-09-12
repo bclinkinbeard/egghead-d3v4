@@ -1,20 +1,17 @@
-# egghead-d3v4
+# Create Chart Axes with D3
 
-#### Lesson 2 - d3-interpolate
-[d3-interpolate][2.1]
-[Code on JSBin][2.2]
+### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/16-chart-axes?show=src%2Fapp.js,preview)
 
-[2.1]: https://github.com/d3/d3-interpolate
-[2.2]: http://jsbin.com/farucah/edit?js,console
-
-#### Lesson 3 - d3-scale
-
-[d3-scale](https://github.com/d3/d3-scale)
-[Code on JSBin](http://jsbin.com/fasixo/edit?js,console)
-
-#### Lesson 11 - Data Joins
-
-[d3-selection: Joining Data](https://github.com/d3/d3-selection#joining-data)
-[Code on JSBin](http://jsbin.com/majacidupo/edit?html,js,output)
-[Thinking with Joins](https://bost.ocks.org/mike/join/)
-[Object Constancy](https://bost.ocks.org/mike/constancy/)
+### Lesson APIs
+- [D3 Margin Convention](https://gist.github.com/mbostock/3019563)
+- [d3.select](https://github.com/d3/d3-selection/blob/master/README.md#select)
+- [d3.scaleLinear](https://github.com/d3/d3-scale/blob/master/README.md#scaleLinear)
+- [d3.scaleTime](https://github.com/d3/d3-scale/blob/master/README.md#scaleTime)
+- [d3.axisLeft](https://github.com/d3/d3-axis/blob/master/README.md#axisLeft)
+- [d3.axisBottom](https://github.com/d3/d3-axis/blob/master/README.md#axisBottom)
+- [selection.call](https://github.com/d3/d3-selection/blob/master/README.md#selection_call)
+- [axis.ticks](https://github.com/d3/d3-axis/blob/master/README.md#axis_ticks)
+- [axis.tickSize](https://github.com/d3/d3-axis/blob/master/README.md#axis_tickSize)
+- [axis.tickSizeInner](https://github.com/d3/d3-axis/blob/master/README.md#axis_tickSizeInner)
+- [axis.tickSizeOuter](https://github.com/d3/d3-axis/blob/master/README.md#axis_tickSizeOuter)
+- [axis.tickPadding](https://github.com/d3/d3-axis/blob/master/README.md#axis_tickPadding)
