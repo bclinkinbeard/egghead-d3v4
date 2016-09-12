@@ -1,13 +1,11 @@
 # egghead-d3v4
 
-#### Lesson 2 - d3-interpolate
-[d3-interpolate][2.1]
-[Code on JSBin][2.2]
-
-[2.1]: https://github.com/d3/d3-interpolate
-[2.2]: http://jsbin.com/farucah/edit?js,console
-
-#### Lesson 3 - d3-scale
-
-[d3-scale](https://github.com/d3/d3-scale)
-[Code on JSBin](http://jsbin.com/fasixo/edit?js,console)
+### Lesson APIs
+- [d3.json](https://github.com/d3/d3-request/blob/master/README.md#json)
+- [d3.csv](https://github.com/d3/d3-request/blob/master/README.md#csv)
+- [d3.tsv](https://github.com/d3/d3-request/blob/master/README.md#tsv)
+- [d3.min](https://github.com/d3/d3-array/blob/master/README.md#min)
+- [d3.max](https://github.com/d3/d3-array/blob/master/README.md#max)
+- [d3.extent](https://github.com/d3/d3-array/blob/master/README.md#extent)
+- [d3.scaleLinear](https://github.com/d3/d3-scale/blob/master/README.md#scaleLinear)
+- [d3.set](https://github.com/d3/d3-collection/blob/master/README.md#set)
