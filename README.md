@@ -1,13 +1,9 @@
-# egghead-d3v4
+# Select DOM Elements with D3
 
-#### Lesson 2 - d3-interpolate
-[d3-interpolate][2.1]
-[Code on JSBin][2.2]
+### [Lesson Code](https://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/07-select-dom-elements?show=src%2Fapp.js,preview)
 
-[2.1]: https://github.com/d3/d3-interpolate
-[2.2]: http://jsbin.com/farucah/edit?js,console
-
-#### Lesson 3 - d3-scale
-
-[d3-scale](https://github.com/d3/d3-scale)
-[Code on JSBin](http://jsbin.com/fasixo/edit?js,console)
+### Lesson APIs
+- [d3.select](https://github.com/d3/d3-selection/blob/master/README.md#select)
+- [d3.selectAll](https://github.com/d3/d3-selection/blob/master/README.md#selectAll)
+- [selection.nodes](https://github.com/d3/d3-selection/blob/master/README.md#selection_nodes)
+- [selection.size](https://github.com/d3/d3-selection/blob/master/README.md#selection_size)
