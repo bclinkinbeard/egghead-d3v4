@@ -1,3 +1,7 @@
+// write to the page for better in-browser experience
+console.log = x => document.querySelector('body').innerText += `${x}\n`;
+
+
 var timeScale = d3.scaleTime()
   .domain([new Date(2016, 0, 1), new Date()])
   .range([0, 100]);
