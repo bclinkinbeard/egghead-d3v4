@@ -1,5 +1,7 @@
 # Modify DOM Elements with D3
 
+Once you can get hold of DOM elements you’re ready to start changing them. Whether it’s changing colors, labels, or even link destinations, this lesson demonstrates the process and patterns for updating the DOM using D3’s powerful APIs.
+
 ### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/08-modify-dom-elements?show=src%2Fapp.js,preview)
 
 ### Lesson APIs
