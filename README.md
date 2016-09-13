@@ -1,5 +1,7 @@
 # Basic Interactivity with D3
 
+Data visualizations are a lot more interesting when they’re interactive. Whether it’s clicks, roll overs, or drags, it makes things more compelling, and D3 is up to the task. This lesson demonstrates how to implement basic interactions and shows how D3 can do things vanilla CSS can’t.
+
 ### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/13-basic-interactivity?show=src%2Fapp.js,preview)
 
 ### Lesson APIs
