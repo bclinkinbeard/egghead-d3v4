@@ -1,20 +1,12 @@
-# egghead-d3v4
+# D3 Margin Convention
 
-#### Lesson 2 - d3-interpolate
-[d3-interpolate][2.1]
-[Code on JSBin][2.2]
+You can’t add axes to a chart if you don’t make room for them. To that end, the D3 community has adopted a simple convention for defining margin sizes that shields most of your code from having to know or care about them. This lesson demonstrates the margin convention and the simple flexibility it adds to your D3 projects.
 
-[2.1]: https://github.com/d3/d3-interpolate
-[2.2]: http://jsbin.com/farucah/edit?js,console
+### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/15-margin-convention?show=src%2Fapp.js,preview)
 
-#### Lesson 3 - d3-scale
-
-[d3-scale](https://github.com/d3/d3-scale)
-[Code on JSBin](http://jsbin.com/fasixo/edit?js,console)
-
-#### Lesson 11 - Data Joins
-
-[d3-selection: Joining Data](https://github.com/d3/d3-selection#joining-data)
-[Code on JSBin](http://jsbin.com/majacidupo/edit?html,js,output)
-[Thinking with Joins](https://bost.ocks.org/mike/join/)
-[Object Constancy](https://bost.ocks.org/mike/constancy/)
+### Lesson APIs
+- [D3 Margin Convention](https://gist.github.com/mbostock/3019563)
+- [d3.select](https://github.com/d3/d3-selection/blob/master/README.md#select)
+- [selection.append](https://github.com/d3/d3-selection/blob/master/README.md#selection_append)
+- [selection.attr](https://github.com/d3/d3-selection/blob/master/README.md#selection_attr)
+- [selection.style](https://github.com/d3/d3-selection/blob/master/README.md#selection_style)
