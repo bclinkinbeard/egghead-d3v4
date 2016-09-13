@@ -1,5 +1,7 @@
 # Data Driven Documents with D3
 
+It’s time to live up to D3’s true name and potential by integrating some real data into your visualization. This lesson introduces the fundamental concepts of enter, update, and exit selections, topics essential for being successful with D3.
+
 ### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/10-data-joins?show=src%2Fapp.js,preview)
 
 ### Lesson APIs
