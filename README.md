@@ -1,5 +1,7 @@
 # Select DOM Elements with D3
 
+Before you can create dazzling data driven documents, you need to know how D3 accesses the DOM. This lesson will show you the ins and outs of accessing existing DOM elements with D3.
+
 ### [Lesson Code](https://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/07-select-dom-elements?show=src%2Fapp.js,preview)
 
 ### Lesson APIs
