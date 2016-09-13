@@ -1,5 +1,7 @@
 # Create Chart Axes with D3
 
+Most charts aren’t complete without axes to provide context and labeling for the graphical elements being displayed. This lesson introduces D3’s APIs for creating, customizing, and displaying axes while building on topics from previous lessons.
+
 ### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/16-chart-axes?show=src%2Fapp.js,preview)
 
 ### Lesson APIs
