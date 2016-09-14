@@ -1,10 +1,8 @@
-# Convert Input Data to Output Values with Linear Scales in D3 v4
+# Install and Configure D3 v4
 
-Mapping abstract values to visual representations is what data visualization is all about, and that’s exactly what D3 scales do. Turning a test score into a column height, or a percentage into an opacity requires translating from one set of possible values to another, and linear scales perform a direct, proportional conversion of inputs to outputs. In this lesson we’ll learn the basic API of D3 scales and how to use them.
+As of version 4, D3 is a completely modular tool, composed of many small libraries. You can use them independently or as a whole, and even create custom builds that include only the parts you need. This lesson will review the options available for installing and using D3, and will set up a local environment for rapid experimentation.
 
-### [Lesson Code](https://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/02-linear-scales?show=src%2Fapp.js,preview)
-
-### Lesson APIs
-- [d3.scaleLinear](https://github.com/d3/d3-scale/blob/master/README.md#scaleLinear)
-- [continuous.clamp](https://github.com/d3/d3-scale/blob/master/README.md#continuous_clamp)
-- [continuous.invert](https://github.com/d3/d3-scale/blob/master/README.md#continuous_invert)
+### Lesson Links
+- [D3.js Homepage](https://d3js.org/)
+- [D3 Install options](https://github.com/d3/d3/wiki#installing)
+- [browser-sync](https://www.npmjs.com/package/browser-sync)
