@@ -1,19 +1,12 @@
-# Create Chart Axes with D3
+# Responsive D3 Charts with the viewBox attribute
 
-Most charts aren’t complete without axes to provide context and labeling for the graphical elements being displayed. This lesson introduces D3’s APIs for creating, customizing, and displaying axes while building on topics from previous lessons.
+Making SVGs responsive is unfortunately not as simple as adding some media queries. This lesson introduces the `viewBox` attribute, which is used to control how SVGs scale. We’ll also examine a reusable function that can be used to make nearly any visualization responsive.
 
-### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/16-chart-axes?show=src%2Fapp.js,preview)
+### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/17-responsive-viewbox?show=src%2Fapp.js,preview)
 
-### Lesson APIs
-- [D3 Margin Convention](https://gist.github.com/mbostock/3019563)
-- [d3.select](https://github.com/d3/d3-selection/blob/master/README.md#select)
-- [d3.scaleLinear](https://github.com/d3/d3-scale/blob/master/README.md#scaleLinear)
-- [d3.scaleTime](https://github.com/d3/d3-scale/blob/master/README.md#scaleTime)
-- [d3.axisLeft](https://github.com/d3/d3-axis/blob/master/README.md#axisLeft)
-- [d3.axisBottom](https://github.com/d3/d3-axis/blob/master/README.md#axisBottom)
-- [selection.call](https://github.com/d3/d3-selection/blob/master/README.md#selection_call)
-- [axis.ticks](https://github.com/d3/d3-axis/blob/master/README.md#axis_ticks)
-- [axis.tickSize](https://github.com/d3/d3-axis/blob/master/README.md#axis_tickSize)
-- [axis.tickSizeInner](https://github.com/d3/d3-axis/blob/master/README.md#axis_tickSizeInner)
-- [axis.tickSizeOuter](https://github.com/d3/d3-axis/blob/master/README.md#axis_tickSizeOuter)
-- [axis.tickPadding](https://github.com/d3/d3-axis/blob/master/README.md#axis_tickPadding)
+### Lesson Links
+- [SVG Coordinate Systems](https://sarasoueidan.com/blog/svg-coordinate-systems/)
+- [SVG Coordinate Systems - The viewport](https://sarasoueidan.com/blog/svg-coordinate-systems/#svg-viewport)
+- [SVG Coordinate Systems - The `viewBox`](https://sarasoueidan.com/blog/svg-coordinate-systems/#svg-viewbox)
+- [SVG Coordinate Systems - Matching aspect ratios](https://sarasoueidan.com/blog/svg-coordinate-systems/#viewbox-aspect-ratio)
+- [Responsive D3.js](http://www.brendansudol.com/writing/responsive-d3)
