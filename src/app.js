@@ -1,6 +1,6 @@
-var margin = { top: 10, right: 20, bottom: 30, left: 30 };
+var margin = { top: 10, right: 20, bottom: 60, left: 30 };
 var width = 400 - margin.left - margin.right;
-var height = 600 - margin.top - margin.bottom;
+var height = 565 - margin.top - margin.bottom;
 
 var svg = d3.select('.chart')
   .append('svg')
@@ -10,11 +10,16 @@ var svg = d3.select('.chart')
   .append('g')
     .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
 
-svg.append('rect')
-  .attr('width', width)
-  .attr('height', height)
-  .style('fill', 'lightblue')
-  .style('stroke', 'green');
+var data = [
+  {score: 63, subject: 'Mathematics'},
+  {score: 82, subject: 'Geography'},
+  {score: 74, subject: 'Spelling'},
+  {score: 97, subject: 'Reading'},
+  {score: 52, subject: 'Science'},
+  {score: 74, subject: 'Chemistry'},
+  {score: 97, subject: 'Physics'},
+  {score: 52, subject: 'ASL'}
+];
 
 var yScale = d3.scaleLinear()
   .domain([0, 100])
@@ -22,8 +27,9 @@ var yScale = d3.scaleLinear()
 var yAxis = d3.axisLeft(yScale);
 svg.call(yAxis);
 
-var xScale = d3.scaleTime()
-  .domain([new Date(2016, 0, 1, 6), new Date(2016, 0, 1, 9)])
+var xScale = d3.scaleBand()
+  .padding(0.2)
+  .domain(data.map(d => d.subject))
   .range([0, width]);
 
 var xAxis = d3.axisBottom(xScale)
@@ -33,7 +39,19 @@ var xAxis = d3.axisBottom(xScale)
 svg
   .append('g')
     .attr('transform', `translate(0, ${height})`)
-  .call(xAxis);
+  .call(xAxis)
+  .selectAll('text')
+  .style('text-anchor', 'end')
+  .attr('transform', 'rotate(-45)');
+
+svg.selectAll('rect')
+  .data(data)
+  .enter()
+  .append('rect')
+  .attr('x', d => xScale(d.subject))
+  .attr('y', d => yScale(d.score))
+  .attr('width', d => xScale.bandwidth())
+  .attr('height', d => height - yScale(d.score));
 
 function responsivefy(svg) {
   // get container + svg aspect ratio
