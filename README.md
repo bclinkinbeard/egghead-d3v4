@@ -1,12 +1,11 @@
-# Responsive D3 Charts with the viewBox attribute
+# Build a Column Chart with D3
 
-Making SVGs responsive is unfortunately not as simple as adding some media queries. This lesson introduces the `viewBox` attribute, which is used to control how SVGs scale. We’ll also examine a reusable function that can be used to make nearly any visualization responsive.
+Column and bar charts are staples of every visualization library. They also make a great project for combining the essential pieces of D3 like selections, scales, axes, and SVG elements. This lesson walks you through the process of creating an essential chart type with all the required components.
 
-### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/17-responsive-viewbox?show=src%2Fapp.js,preview)
+### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/18-column-chart?show=src%2Fapp.js,preview)
 
-### Lesson Links
-- [SVG Coordinate Systems](https://sarasoueidan.com/blog/svg-coordinate-systems/)
-- [SVG Coordinate Systems - The viewport](https://sarasoueidan.com/blog/svg-coordinate-systems/#svg-viewport)
-- [SVG Coordinate Systems - The `viewBox`](https://sarasoueidan.com/blog/svg-coordinate-systems/#svg-viewbox)
-- [SVG Coordinate Systems - Matching aspect ratios](https://sarasoueidan.com/blog/svg-coordinate-systems/#viewbox-aspect-ratio)
-- [Responsive D3.js](http://www.brendansudol.com/writing/responsive-d3)
+### Lesson APIs
+- [Band Scales](https://github.com/d3/d3-scale#band-scales)
+- [`band.padding()`](https://github.com/d3/d3-scale#band_paddingInner)
+- [`band.align()`](https://github.com/d3/d3-scale#band_align)
+- [`band.bandwidth()`](https://github.com/d3/d3-scale#band_bandwidth)
