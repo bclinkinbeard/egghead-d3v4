@@ -1,8 +1,8 @@
-# Debug D3 with Dev Tools
+# Animated Transitions in D3
 
-Since D3 outputs standard markup, you can use familiar dev tools and inspectors to debug your visualizations. In this lesson we’ll look at how to use Chrome Dev Tools to examine the data associated with your generated markup and experiment with styles to speed up the development process.
+D3 makes it easy to add meaningful animations to your data visualizations. Whether it’s fading in new items or tweening existing shapes to display new values, adding transitions is easy. This lesson shows you how to add animations while building on your existing knowledge of D3 selections.
 
-### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/22-debug-devtools?show=src%2Fapp.js,preview)
+### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/23-animated-transitions?show=src%2Fapp.js,preview)
 
 ### Lesson APIs
 - [Linear Scales](https://github.com/d3/d3-scale#linear-scales)
