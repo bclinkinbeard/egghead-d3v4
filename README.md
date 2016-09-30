@@ -1,11 +1,12 @@
-# Build a Column Chart with D3
+# Build a Scatter Plot with D3
 
-Column and bar charts are staples of every visualization library. They also make a great project for combining the essential pieces of D3 like selections, scales, axes, and SVG elements. This lesson walks you through the process of creating an essential chart type with all the required components.
+Scatter plots, sometimes also known as bubble charts, are another common type of visualization. They’re extremely versatile thanks to their ability to display multiple dimensions of data simultaneously using x and y position, opacity, color, and even shape. This lesson introduces the SVG `circle` element as part of building a robust scatter plot.
 
-### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/18-column-chart?show=src%2Fapp.js,preview)
+### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/19-scatter-plot?show=src%2Fapp.js,preview)
 
 ### Lesson APIs
-- [Band Scales](https://github.com/d3/d3-scale#band-scales)
-- [`band.padding()`](https://github.com/d3/d3-scale#band_paddingInner)
-- [`band.align()`](https://github.com/d3/d3-scale#band_align)
-- [`band.bandwidth()`](https://github.com/d3/d3-scale#band_bandwidth)
+- [Linear Scales](https://github.com/d3/d3-scale#linear-scales)
+- [Square Root Scales](https://github.com/d3/d3-scale#scaleSqrt)
+- [d3.json](https://github.com/d3/d3-request/blob/master/README.md#json)
+- [d3.extent](https://github.com/d3/d3-array/blob/master/README.md#extent)
+- [d3.max](https://github.com/d3/d3-array/blob/master/README.md#max)

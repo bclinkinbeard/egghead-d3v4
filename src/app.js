@@ -62,8 +62,6 @@ d3.json('./data.json', function (err, data) {
 });
 
 
-
-
 function responsivefy(svg) {
   // get container + svg aspect ratio
   var container = d3.select(svg.node().parentNode),
