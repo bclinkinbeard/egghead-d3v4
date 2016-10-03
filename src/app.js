@@ -8,27 +8,53 @@ var svg = d3.select('.chart')
     .attr('height', height + margin.top + margin.bottom)
     .call(responsivefy)
   .append('g')
-    .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
+    .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
 d3.json('./data.json', function (err, data) {
-  var yScale = d3.scaleLinear()
-    .domain([0, 100])
-    .range([height, 0])
-    .nice();
-  var yAxis = d3.axisLeft(yScale);
-  svg.call(yAxis);
+  var parseTime = d3.timeParse("%Y/%m/%d");
 
-  var xScale = d3.scaleLinear()
-    .domain([0, 100])
-    .range([0, width])
-    .nice();
+  // format the data
+  data.forEach(company => {
+    company.values.forEach(function(d) {
+      d.date = parseTime(d.date);
+      d.close = +d.close;
+    });
+  });
 
-  var xAxis = d3.axisBottom(xScale)
-    .ticks(5);
+  var xScale = d3.scaleTime()
+    .domain([
+      d3.min(data, co => d3.min(co.values, d => d.date)),
+      d3.max(data, co => d3.max(co.values, d => d.date))
+    ])
+    .range([0, width]);
   svg
     .append('g')
       .attr('transform', `translate(0, ${height})`)
-    .call(xAxis);
+    .call(d3.axisBottom(xScale));
+
+  var yScale = d3.scaleLinear()
+    .domain([
+      d3.min(data, co => d3.min(co.values, d => d.close)),
+      d3.max(data, co => d3.max(co.values, d => d.close))
+    ])
+    .range([height, 0]);
+  svg.append('g').call(d3.axisLeft(yScale));
+
+  var line = d3.line()
+      .x(function(d) { return xScale(d.date); })
+      .y(function(d) { return yScale(d.close); })
+      .curve(d3.curveCatmullRom.alpha(0.5));
+
+  svg
+    .selectAll('.line')
+    .data(data)
+    .enter()
+    .append('path')
+    .attr('class', 'line')
+    .attr('d', d => line(d.values))
+    .style('stroke', (d, i) => ['#FF9900', '#3369E8'][i])
+    .style('stroke-width', 4)
+    .style('fill', 'none');
 
 });
 
