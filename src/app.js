@@ -11,11 +11,11 @@ var svg = d3.select('.chart')
     .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
 d3.json('./data.json', function (err, data) {
-  var parseTime = d3.timeParse("%Y/%m/%d");
 
-  // format the data
+  var parseTime = d3.timeParse('%Y/%m/%d');
+
   data.forEach(company => {
-    company.values.forEach(function(d) {
+    company.values.forEach(d => {
       d.date = parseTime(d.date);
       d.close = +d.close;
     });
@@ -30,7 +30,7 @@ d3.json('./data.json', function (err, data) {
   svg
     .append('g')
       .attr('transform', `translate(0, ${height})`)
-    .call(d3.axisBottom(xScale));
+    .call(d3.axisBottom(xScale).ticks(5));
 
   var yScale = d3.scaleLinear()
     .domain([
@@ -38,12 +38,14 @@ d3.json('./data.json', function (err, data) {
       d3.max(data, co => d3.max(co.values, d => d.close))
     ])
     .range([height, 0]);
-  svg.append('g').call(d3.axisLeft(yScale));
+  svg
+    .append('g')
+    .call(d3.axisLeft(yScale));
 
   var line = d3.line()
-      .x(function(d) { return xScale(d.date); })
-      .y(function(d) { return yScale(d.close); })
-      .curve(d3.curveCatmullRom.alpha(0.5));
+    .x(d => xScale(d.date))
+    .y(d => yScale(d.close))
+    .curve(d3.curveCatmullRom.alpha(0.5));
 
   svg
     .selectAll('.line')
@@ -53,7 +55,7 @@ d3.json('./data.json', function (err, data) {
     .attr('class', 'line')
     .attr('d', d => line(d.values))
     .style('stroke', (d, i) => ['#FF9900', '#3369E8'][i])
-    .style('stroke-width', 4)
+    .style('stroke-width', 2)
     .style('fill', 'none');
 
 });
