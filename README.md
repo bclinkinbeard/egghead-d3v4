@@ -6,3 +6,4 @@ Since D3 outputs standard markup, you can use familiar dev tools and inspectors 
 
 ### Lesson APIs
 - [Linear Scales](https://github.com/d3/d3-scale#linear-scales)
+- [selection.filter](https://github.com/d3/d3-selection#selection_filter)
