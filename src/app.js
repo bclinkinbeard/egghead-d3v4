@@ -8,27 +8,31 @@ var svg = d3.select('.chart')
     .attr('height', height + margin.top + margin.bottom)
     .call(responsivefy)
   .append('g')
-    .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
+    .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
 d3.json('./data.json', function (err, data) {
-  var yScale = d3.scaleLinear()
-    .domain([0, 100])
-    .range([height, 0])
-    .nice();
-  var yAxis = d3.axisLeft(yScale);
-  svg.call(yAxis);
 
   var xScale = d3.scaleLinear()
     .domain([0, 100])
-    .range([0, width])
-    .nice();
-
-  var xAxis = d3.axisBottom(xScale)
-    .ticks(5);
-  svg
-    .append('g')
+    .range([0, width]);
+  svg.append('g')
       .attr('transform', `translate(0, ${height})`)
-    .call(xAxis);
+    .call(d3.axisBottom(xScale));
+
+  var yScale = d3.scaleLinear()
+    .domain([0, 100])
+    .range([height, 0]);
+  svg.append('g').call(d3.axisLeft(yScale));
+
+  svg
+    .selectAll('circle')
+    .data(data)
+    .enter()
+    .append('circle')
+    .attr('cx', d => xScale(d.x))
+    .attr('cy', d => yScale(d.y))
+    .attr('r', d => d.r)
+    .attr('class', 'ball');
 
 });
 
