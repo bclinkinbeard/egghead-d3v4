@@ -6,3 +6,7 @@ D3 makes it easy to add meaningful animations to your data visualizations. Wheth
 
 ### Lesson APIs
 - [Linear Scales](https://github.com/d3/d3-scale#linear-scales)
+- [General Update Pattern, I](https://bl.ocks.org/mbostock/3808218)
+- [General Update Pattern, II](https://bl.ocks.org/mbostock/3808221)
+- [General Update Pattern, III](https://bl.ocks.org/mbostock/3808234)
+- [Interactive General Update Pattern](http://bl.ocks.org/cmgiven/32d4c53f19aea6e528faf10bfe4f3da9)
