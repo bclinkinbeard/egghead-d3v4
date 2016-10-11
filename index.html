@@ -5,17 +5,22 @@
   <title>Egghead D3 v4</title>
   <script src="//d3js.org/d3.v4.min.js"></script>
   <style>
-    #block {
+    .block {
       background: lightgray;
       border: 1px solid black;
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
+      margin-bottom: 1em;
     }
   </style>
 </head>
 <body>
 
-  <div id="block"></div>
+  <div class="block a"></div>
+  <div class="block b"></div>
+
+  <button onclick="go()">Go</button>
+  <button onclick="goNow()">Go Now</button>
 
   <script src="src/app.js"></script>
 </body>
