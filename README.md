@@ -5,10 +5,10 @@ D3 makes it easy to add meaningful animations to your data visualizations. Wheth
 ### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/23-animated-transitions?show=src%2Fapp.js,preview)
 
 ### Lesson APIs
-- [d3.select()](https://github.com/d3/d3-selection#select)
+- [d3.transition()](https://github.com/d3/d3-transition#transition)
+- [transition.call()](https://github.com/d3/d3-transition#transition_call)
 - [selection.transition()](https://github.com/d3/d3-transition#selection_transition)
 - [transition.duration()](https://github.com/d3/d3-transition#transition_duration)
 - [transition.delay()](https://github.com/d3/d3-transition#transition_delay)
-- [transition.ease()](https://github.com/d3/d3-transition#transition_ease)
 - [transition.style()](https://github.com/d3/d3-transition#transition_style)
 - [transition.attr()](https://github.com/d3/d3-transition#transition_attr)
