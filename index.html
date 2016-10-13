@@ -5,22 +5,19 @@
   <title>Egghead D3 v4</title>
   <script src="//d3js.org/d3.v4.min.js"></script>
   <style>
-    .block {
+    .chart {
       background: lightgray;
       border: 1px solid black;
-      width: 50px;
-      height: 50px;
-      margin-bottom: 1em;
     }
   </style>
 </head>
 <body>
 
-  <div class="block a"></div>
-  <div class="block b"></div>
+  <div class="chart"></div>
 
-  <button onclick="go()">Go</button>
-  <button onclick="goNow()">Go Now</button>
+  <button onclick="render('math')">Math</button>
+  <button onclick="render('science')">Science</button>
+  <button onclick="render('language')">Language</button>
 
   <script src="src/app.js"></script>
 </body>
