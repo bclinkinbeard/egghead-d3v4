@@ -1,8 +1,5 @@
-# egghead-d3v4
+# Build Interactive JavaScript Charts with D3 v4
 
-#### Lesson 2 - d3-interpolate
-[d3-interpolate][2.1]
-[Code on JSBin][2.2]
+This repository houses the code examples and links for the [Build Interactive JavaScript Charts with D3 v4](https://egghead.io/courses/abcs-of-d3) course on [Egghead.io](https://egghead.io/).
 
-[2.1]: https://github.com/d3/d3-interpolate
-[2.2]: http://jsbin.com/farucah/edit?js,console
+The materials for each lesson are housed in a branch named for that lesson.
