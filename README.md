@@ -1,8 +1,8 @@
-# Animated Transitions in D3
+# Reuse Transitions in D3
 
-D3 makes it easy to add meaningful animations to your data visualizations. Whether it’s fading in new items or tweening existing shapes to display new values, adding transitions is easy. This lesson shows you how to add animations while building on your existing knowledge of D3 selections.
+D3 transitions start executing as soon as they’re created, and they’re destroyed once they end. This can present some challenges when attempting to create reusable transitions. This lesson demonstrates how to overcome those challenges using various approaches to reusable transitions.
 
-### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/23-animated-transitions?show=src%2Fapp.js,preview)
+### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/24-reusable-transitions?show=src%2Fapp.js,preview)
 
 ### Lesson APIs
 - [d3.transition()](https://github.com/d3/d3-transition#transition)
