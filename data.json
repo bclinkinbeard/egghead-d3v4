@@ -1,9 +1,9 @@
 [
   {
     "name": "Alice",
-    "math": 67,
-    "science": 28,
-    "language": 60
+    "math": 37,
+    "science": 62,
+    "language": 54
   },
   {
     "name": "Billy",
@@ -15,7 +15,7 @@
     "name": "Cindy",
     "math": 86,
     "science": 48,
-    "language": 42
+    "language": null
   },
   {
     "name": "David",
@@ -25,8 +25,8 @@
   },
   {
     "name": "Emily",
-    "math": 49,
-    "science": 23,
-    "language": null
+    "math": 59,
+    "science": 73,
+    "language": 29
   }
 ]
