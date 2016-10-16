@@ -1,14 +1,14 @@
 var data = [
-  {name: 'Alice', score: 37},
-  {name: 'Billy', score: 69},
-  {name: 'Cindy', score: 86},
-  {name: 'David', score: 44},
-  {name: 'Emily', score: 59}
+  {name: 'Alice', math: 37,   science: 62,   language: 54},
+  {name: 'Billy', math: null, science: 34,   language: 85},
+  {name: 'Cindy', math: 86,   science: 48,   language: null},
+  {name: 'David', math: 44,   science: null, language: 65},
+  {name: 'Emily', math: 59,   science: 73,   language: 29}
 ];
 
 var margin = { top: 10, right: 10, bottom: 30, left: 30 };
 var width = 400 - margin.left - margin.right;
-var height = 565 - margin.top - margin.bottom;
+var height = 535 - margin.top - margin.bottom;
 
 var svg = d3.select('.chart')
   .append('svg')
@@ -34,14 +34,38 @@ svg
   .append('g')
   .call(d3.axisLeft(yScale));
 
-svg.selectAll('rect')
-  .data(data)
-  .enter()
-  .append('rect')
-  .attr('x', d => xScale(d.name))
-  .attr('y', d => yScale(d.score))
-  .attr('width', d => xScale.bandwidth())
-  .attr('height', d => height - yScale(d.score));
+function render (subject = 'math') {
+  var t = d3.transition().duration(1000);
+
+  var update = svg.selectAll('rect')
+    .data(data.filter(d => d[subject]), d => d.name);
+
+  update.exit()
+    .transition(t)
+    .attr('y', height)
+    .attr('height', 0)
+    .remove();
+
+  update
+    .transition(t)
+    .delay(1000)
+    .attr('y', d => yScale(d[subject]))
+    .attr('height', d => height - yScale(d[subject]));
+
+  update
+    .enter()
+    .append('rect')
+    .attr('y', height)
+    .attr('height', 0)
+    .attr('x', d => xScale(d.name))
+    .attr('width', d => xScale.bandwidth())
+    .transition(t)
+    .delay(update.exit().size() ? 2000 : 0)
+    .attr('y', d => yScale(d[subject]))
+    .attr('height', d => height - yScale(d[subject]));
+}
+
+render();
 
 function responsivefy(svg) {
   // get container + svg aspect ratio
