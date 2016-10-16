@@ -1,9 +1,9 @@
 var data = [
-  {name: 'Alice', math: 37,   science: 62,   language: 54},
-  {name: 'Billy', math: null, science: 34,   language: 85},
-  {name: 'Cindy', math: 86,   science: 48,   language: null},
-  {name: 'David', math: 44,   science: null, language: 65},
-  {name: 'Emily', math: 59,   science: 73,   language: 29}
+  {name: 'Alice', score: 37},
+  {name: 'Billy', score: 69},
+  {name: 'Cindy', score: 86},
+  {name: 'David', score: 44},
+  {name: 'Emily', score: 59}
 ];
 
 var margin = { top: 10, right: 10, bottom: 30, left: 30 };
@@ -39,9 +39,9 @@ svg.selectAll('rect')
   .enter()
   .append('rect')
   .attr('x', d => xScale(d.name))
-  .attr('y', d => yScale(d.math))
+  .attr('y', d => yScale(d.score))
   .attr('width', d => xScale.bandwidth())
-  .attr('height', d => height - yScale(d.math));
+  .attr('height', d => height - yScale(d.score));
 
 function responsivefy(svg) {
   // get container + svg aspect ratio
