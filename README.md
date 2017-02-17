@@ -1,8 +1,8 @@
-# Animate the D3 General Update Pattern
+# Animate Chart Axis Transitions in D3 v4
 
-In D3, the General Update Pattern is the name given to what happens when a data join is followed by operations on the enter, update, and exit selections. When a chart's data changes over time and each update can both create new elements and destroy existing ones, the General Update pattern helps convey meaning to users. This lesson demonstrates the pattern using animated transitions on a column chart.
+When the data being rendered by a chart changes, sometimes it necessitates a change to the scales and axes of the chart as well. This lesson demonstrates how to animate and synchronize axis transitions on a column chart.
 
-### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/25-animate-update-pattern?show=src%2Fapp.js,preview)
+### [Lesson Code](http://embed.plnkr.co/github/bclinkinbeard/egghead-d3v4/26-animate-axis-updates?show=src%2Fapp.js,preview)
 
 ### Lesson Links
 - [d3.transition()](https://github.com/d3/d3-transition#transition)
